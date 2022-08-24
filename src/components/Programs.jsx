@@ -10,7 +10,6 @@ const Programs = () => {
     <section className="programs">
       <div className="container programs__container">
        <SectionHead icon={<FaCrown />} title="Programs" />
-      </div>
 
       <div className="programs__wrapper">
         {
@@ -25,6 +24,7 @@ const Programs = () => {
             )
           })
         }
+      </div>
       </div>
     </section>
   )
