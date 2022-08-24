@@ -154,6 +154,7 @@ section{
   place-items: center;
   margin-bottom: 1.5rem;
   margin-inline: auto;
+  border-radius: 1rem;
   transition: var(--transition);
 }
 
