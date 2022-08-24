@@ -7,8 +7,25 @@ import {testimonials} from '../data'
 
 
 function Testimonials() {
-  const [index, setIndex] = useState(1)
+  const [index, setIndex] = useState(0)
   const {avatar, name, quote, job} = testimonials[index]
+
+
+  const prevTestimonialHandler = () => {
+    setIndex(prev => prev - 1)
+
+    if(index <= 0 ){
+      setIndex(testimonials.length - 1)
+    }
+  }
+
+  const nextTestimonialHandler = () => {
+    setIndex(prev => prev + 1)
+
+    if(index >= testimonials.length - 1){
+      setIndex(0)
+    }
+  }
 
   
   return (
@@ -24,8 +41,8 @@ function Testimonials() {
           <small className="testimonial__title">{job}</small>
         </Card>
         <div className="testimonials__btn-container">
-          <button className="testimonial__btn"><IoIosArrowDropleftCircle/></button>
-          <button className="testimonial__btn"><IoIosArrowDroprightCircle/></button>
+          <button className="testimonial__btn" onClick={prevTestimonialHandler}><IoIosArrowDropleftCircle/></button>
+          <button className="testimonial__btn" onClick={nextTestimonialHandler}><IoIosArrowDroprightCircle/></button>
         </div>
       </div>
     </section>
