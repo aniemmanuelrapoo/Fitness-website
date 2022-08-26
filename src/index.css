@@ -68,8 +68,9 @@ img{
   object-fit: cover;
   width: 100%;
 }
-
-
+.reli{
+  line-height: 0;
+}
 
 
 
