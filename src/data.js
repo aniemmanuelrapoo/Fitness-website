@@ -266,9 +266,9 @@ export const plans = [
 
 
 
-const Trainer1 = require('./images/budapest.jpg')
-const Trainer2 = require('./images/rotterdam.jpg')
-const Trainer3 = require('./images/riga.jpg')
+const Trainer1 = require('./images/trainer1.jpg')
+const Trainer2 = require('./images/trainer2.jpg')
+const Trainer3 = require('./images/trainer3.jpg')
 const Trainer4 = require('./images/trainer4.jpg')
 const Trainer5 = require('./images/trainer5.jpg')
 const Trainer6 = require('./images/trainer6.jpg')
